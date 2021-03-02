@@ -15,11 +15,13 @@ public class PlayerControl : MonoBehaviour
 
     public AudioSource throwSound;
 
+    public VectorValue startingPosition;
+
     // Start is called before the first frame update
     void Start()
     {
         //theRB = GetComponent<RigidBody2D>();
-
+        transform.position = startingPosition.initialValue;
         anim = GetComponent<Animator>();
     }
 

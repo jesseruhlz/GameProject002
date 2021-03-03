@@ -10,7 +10,18 @@ public class GemstonePickup : MonoBehaviour
         if (LayerMask.LayerToName(collision.gameObject.layer) == "Player")
         {
             AudioSource.PlayClipAtPoint(pickupClip, transform.position);
+            ScoreManager.instance.ChangeScore(coinValue);
             Destroy(this.gameObject);
         }
     }
+
+    public int coinValue = 1;
+    /*
+    void onTriggerEnter2D(Collider2D other)
+    {
+        if (LayerMask.LayerToName(other.gameObject.layer) == "Player")
+        {
+            ScoreManager.instance.ChangeScore(coinValue);
+        }
+    }*/
 }

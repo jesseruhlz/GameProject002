@@ -8,6 +8,7 @@ TagManager:
   - Platform
   - Gem
   - Turn
+  - PlatTrigger
   layers:
   - Default
   - TransparentFX

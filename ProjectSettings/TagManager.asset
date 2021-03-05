@@ -9,6 +9,7 @@ TagManager:
   - Gem
   - Turn
   - PlatTrigger
+  - Rock
   layers:
   - Default
   - TransparentFX
